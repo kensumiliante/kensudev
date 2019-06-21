@@ -1,0 +1,470 @@
+
+/*
+|--------------------------------------------------------------------------
+| GENERAL
+|--------------------------------------------------------------------------
+|
+*/
+
+
+.banner {
+	a:hover{
+		border: none;
+	}
+	p{
+		margin-top: 17%;
+		margin-bottom: 34%;
+	}
+	h1{
+		font-size: 2.2em;
+	}
+	
+}
+
+
+.section-content{
+
+	padding: 4.7em 0 1.5em ;
+	// padding: 3em 0 59px 0;
+	// margin-top: 17px;
+}
+
+ul.row{
+	margin-bottom: 1.5em;
+	&.no-margin-bottom{
+		margin-bottom: 0;
+	}
+}
+
+.no-padding-bottom{
+		padding-bottom: 0;
+}
+
+.no-padding-top{
+		padding-top: 0;
+}
+
+
+[data-line=blue] {
+	border-top: 4px solid @primary;
+}
+
+/*
+|--------------------------------------------------------------------------
+| HEADER
+|--------------------------------------------------------------------------
+|
+*/
+
+
+
+
+//  slider text
+.text-effect-loop{
+	height: 10px;
+}
+
+
+.main-header{
+	// .gradient();
+	// height: 600px;
+	// background: transparen url('../img/color-stripe.png') 0 0 repeat-x;
+}
+
+// styker
+
+.is-sticky > nav{
+	width: 100%;
+	z-index: 3;
+	.transition();
+	
+	// padding: 10px 0;
+	// .logo img{
+	// 	width: 60%;
+	// 	padding: 10px 0;
+	// }
+}
+.logo{
+	// margin-left: 25%;
+	float: left;
+}
+.logo img{
+	text-decoration: none;
+}
+.is-sticky-social > .sticker-social{
+	z-index: 2;
+	width: 142%;
+
+}
+
+.main-nav{
+
+	background-color: darken(@primary, 10%);
+	line-height: 72px;
+	ul{
+		// margin-top: 3em;
+		height: 72px;
+		li{
+			text-transform: uppercase;
+			a{
+				color: white;
+				text-decoration: none;
+				display:block;
+				.transition();
+				height: 73px;
+				&:hover {
+					background-color: @white;
+					color: @blueprimary;
+					// font-weight: bold;
+				}
+			}
+			&.current, a:active{
+				a{
+					.transition();
+					background-color: @white;
+					color: @light-text;
+				
+				}
+			}
+		}
+	}
+}
+
+
+/*==============================
+=            titles            =
+==============================*/
+.titles-heading-light{
+	position: relative;	
+	text-align: center;
+	
+	 h1{
+		background-color: @white;
+		margin: 0 auto;
+		width: 28%;
+		padding: auto 20px;
+		z-index: 2;
+		position: relative;
+		&:after{
+			color: @titlelight;
+			content: '★';
+			margin-left: 20px
+		}
+
+		&:before{             
+			color: @titlelight;
+			content: '★';
+			margin-right: 20px
+		}
+
+		 span{
+			font-size: 14px;
+			display: block;
+			color: #777;
+		}
+	}
+}
+
+.heading-dark{
+	h1{
+		background-color: @dark-bg;
+		color: @titlelight;
+	}
+}
+
+
+.titles-heading-light .line{
+	height: 1px;
+	z-index: 1;
+	background-color: #dedede;
+	width: 80%;
+	left: 10%;
+	position: absolute;
+	top:68%;
+}
+
+
+
+/*-----  End of titles  ------*/
+ 
+
+ .navbar-nav.nav-justified > li{
+    float:none;
+}
+
+
+
+
+
+
+/*=====================================
+=            hover effects            =
+=====================================*/
+
+
+
+.grid figure {
+	margin: 0;
+	position: relative;
+	 img {
+		max-width: 100%;
+		display: block;
+		position: relative;
+	}
+}
+
+
+
+.grid figcaption {
+	position: absolute;
+	top: 0;
+	left: 0;
+	padding: 20px;
+	background: @blueprimary;
+	color: @white;
+	h3 {
+		margin: 0;
+		padding: 0;
+		color: @white;
+	}
+		a {
+			text-align: center;
+			padding: 5px 10px;
+			border-radius: 2px;
+			display: inline-block;
+			background: @intro-color2;
+			color: @white;
+	}
+}
+
+
+.grid figcaption span:before {
+	content: 'by ';
+}
+
+
+
+
+
+/* Caption Style 3 */
+.cs-style-3 figure {
+	overflow: hidden;
+}
+
+.cs-style-3 figure img {
+	-webkit-transition: -webkit-transform 0.4s;
+	-moz-transition: -moz-transform 0.4s;
+	transition: transform 0.4s;
+}
+
+.no-touch .cs-style-3 figure:hover img,
+.cs-style-3 figure.cs-hover img {
+	-webkit-transform: translateY(-50px);
+	-moz-transform: translateY(-50px);
+	-ms-transform: translateY(-50px);
+	transform: translateY(-50px);
+}
+
+.cs-style-3 figcaption {
+	height: 100px;
+	width: 100%;
+	top: auto;
+	bottom: 0;
+	opacity: 0;
+	-webkit-transform: translateY(100%);
+	-moz-transform: translateY(100%);
+	-ms-transform: translateY(100%);
+	transform: translateY(100%);
+	-webkit-transition: -webkit-transform 0.4s, opacity 0.1s 0.3s;
+	-moz-transition: -moz-transform 0.4s, opacity 0.1s 0.3s;
+	transition: transform 0.4s, opacity 0.1s 0.3s;
+}
+
+.no-touch .cs-style-3 figure:hover figcaption,
+.cs-style-3 figure.cs-hover figcaption {
+	opacity: 1;
+	-webkit-transform: translateY(0px);
+	-moz-transform: translateY(0px);
+	-ms-transform: translateY(0px);
+	transform: translateY(0px);
+	-webkit-transition: -webkit-transform 0.4s, opacity 0.1s;
+	-moz-transition: -moz-transform 0.4s, opacity 0.1s;
+	transition: transform 0.4s, opacity 0.1s;
+}
+
+.cs-style-3 figcaption a {
+	position: absolute;
+	bottom: 20px;
+	right: 20px;
+}
+
+
+@media screen and (max-width: 31.5em) {
+	.grid {
+		padding: 10px 10px 100px 10px;
+	}
+	.grid li {
+		width: 100%;
+		min-width: 300px;
+	}
+}
+
+
+
+/*-----  End of hover effects  ------*/
+
+
+
+
+/*
+|--------------------------------------------------------------------------
+| MIDDLE CONTENT
+|--------------------------------------------------------------------------
+|
+*/
+
+
+.middle-container{
+	background: transparent url('../img/pattern.png') 0 0 repeat;
+	// .inner-shadow();
+}
+
+.intro-content{
+	background-color: @dark-bg;
+	color: white;
+	height: 209px;
+	padding: 0 3em;
+}
+.portafolio-entry{
+	margin-bottom: 2.5em;
+	position: relative;
+
+	.hover-state{
+		height: 209px;
+		left: 3px;
+		top: 3px;
+		position: absolute;
+		width: 95%;
+		padding: 5.5em 75px;
+		display: none;
+		background:white;
+
+		p{
+			margin-bottom: 0;
+			position: relative;
+			&:before{
+				content: '\e603';
+				color: @primary;
+				font-family: 'icomoon';
+				position: absolute;
+				top:2px;
+				left: 170px;
+			}
+		}
+	}
+	figure img{
+		.transition(opacity, .2s);
+	}
+	&:hover figure img{
+		opacity: 0;
+		filter: alpha(opacity=0);
+	}
+	&:hover .hover-state{
+		display:block;
+	}
+}
+
+.portfolio-header{
+	margin: 1.5em auto;
+}
+
+.portfolio-nav{
+	padding: 1.5em 0;
+}
+
+.portfolio-image-list{
+	li{
+		margin-bottom: 1.5em;
+
+		figcaption{
+			font-size: 14px;
+			margin: 1.5em;
+			text-align: center;
+		}
+
+		&:last-child{
+			margin-bottom: 0
+		}
+	}
+}
+
+.sidebar{
+	padding: 3em 1.5em;
+}
+.available{
+	color: @intro-color2;
+}
+
+.auto-page, .contact-page{
+	hr.alt{
+		margin: 3em auto;
+	}
+	.cta{
+		margin-top: 3em;
+	}
+}
+
+.livicon{
+	position: relative;
+	margin-left: 40%
+}
+
+/*
+|--------------------------------------------------------------------------
+| QUOTE AREA
+|--------------------------------------------------------------------------
+|
+*/
+.quote-container{
+	background-color: @dark-bg;
+	h3{
+		color:white;
+	}
+	p{
+		color:@dark-bg-text;
+		a:hover{
+			color: white;
+		}
+		&:last-child{
+			margin-bottom: 0;
+		}
+	}
+}
+
+/*
+|--------------------------------------------------------------------------
+| =FOOTER
+|--------------------------------------------------------------------------
+|
+*/
+
+.main-footer{
+	p{
+		.narrow-p();
+	}
+}
+
+.social-icons{
+	li a {
+		color: @border;
+		font-size: 32px;
+		display: inline-block;
+
+		.transition();
+
+		&:hover, &:focus {
+			color: @primary;
+			text-decoration: none;
+		}
+	}
+}

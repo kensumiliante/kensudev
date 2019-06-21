@@ -1,0 +1,209 @@
+/*
+|--------------------------------------------------------------------------
+| UI ELEMENT STYLES
+|--------------------------------------------------------------------------
+|
+*/
+
+hr{
+	background-color: @border;
+	background-image: -moz-linear-gradient( left, white 0%, @border 50%, white 100%);
+	background-image: -o-linear-gradient( left, white 0%, @border 50%, white 100%);
+	background-image: -webkit-linear-gradient( left, white 0%, @border 50%, white 100%);
+	background-image: linear-gradient( left, white 0%, @border 50%, white 100%);
+
+	border: none;
+	height: 1px;
+	margin: 1.5em auto;
+	width: 50%;
+	&.no-margin{
+		margin: 0 auto;
+	}
+
+	&.alt{
+		background: white;
+		border-top: 1px solid @border;
+		border-bottom: 1px solid @border;
+		height: 5px;
+		width: 120px;		
+	}
+}
+.box{
+	background-color: white;
+	border: 1px solid @border;
+	padding: 3px;
+	.drop-shadow();
+	figure img{
+		display: block;
+		height: auto;
+		width: 100%;
+	}
+}
+.btn{
+	background-color: @light-bg;
+	color: @light-text;
+	height: 32px;
+	display: inline-block;
+	font-size: 14px;
+	text-decoration:  none;
+	padding: 3px 16px;
+	.round();
+	.transition(background-color, .2s);
+
+	&:hover{
+		background-color:  @dark-bg;
+		color: white;
+	}
+
+	&:active{
+		background-color: lighten(@dark-bg, 5%);
+	}
+
+	&.active{
+		background-color: white;
+		font-weight: bold;
+
+		&:hover{
+			color: inherit;
+		}
+	}
+}
+
+.btn-primary{
+	background-color: @primary;
+	color: white;
+	font-size: 16px;
+	font-weight: bold;
+	height: 48px;
+
+	.inner-shadow(0, -3px, 0, 0, .2);
+
+	padding: 12px 24px;
+	text-transform: uppercase;	
+
+	&:hover, &:focus{
+		background-color: lighten(@primary, 3%);
+		text-decoration: none;
+		color: white;
+	}
+
+	&:active{
+		box-shadow: none;
+		height: 45px;
+		margin-top: 3px;
+	}
+}
+
+blockquote{
+	p {
+		color: @light-text;
+		font-style: italic;
+
+		&:before,
+		&:after{
+			content: '"';
+		}
+	}
+	
+	cite{
+		font-size: 14px ;
+		text-transform: uppercase;
+	}	
+}
+
+.quote-form{
+	margin: 0 auto;
+	width: 550px;
+	p{
+		background-color: @light-bg;
+		margin-bottom: 12px;
+		padding: 3px 3px 3px 16px;
+		text-align:  left;
+		overflow: hidden;
+		&:hover{
+			background-color:  darken(@light-bg, 2%);
+		}
+	}
+
+	label{
+		display: inline-block;
+		margin-top: 16px
+	}
+
+	input[type='text'],
+	input[type='email'],
+	input[type="number"],
+	input[type='text'],
+	textarea{
+		border: none;
+		font: 300 16px/24px "Source Sans Pro", Helvetica, Arial, sans-serif;
+		float: right;
+		height: 54px;
+		width: 350px;
+		margin-left: 16px;
+		padding: 0 16px;
+		width: 350px;
+	}
+	.select-container{
+		height: 68px;
+
+		select{
+			float: right;
+			font-size: 16px;
+			margin: 16px 0 16px 16px;
+			width: 358px;
+		}
+	}
+
+	textarea{
+		height: 200px;
+		padding: 16px;
+	}
+
+	input[type='submit']{
+		border: none;
+		cursor: pointer;
+		font: bold 16px/24px "Source Sans Pro", Helvetica, Arial, sans-serif;
+		-webkit-font-smoothing: antialiased;
+	}
+}
+
+
+// livicons
+#promo8{
+  background-color: #465568;
+  border-top: solid 5px #5F7283;
+  border-bottom: solid 1px #8ED8F3;
+  color: #F3F8FC;
+}
+#promo8 a:link, #promo8 a:active, #promo8 a:hover, #promo8 a:visited {
+  text-decoration: none;
+}
+#promo8 h4, #promo8 #tele, #promo8 #skype {
+  padding: 5px;
+}
+
+#promo8 h4 {
+  margin: 0!important;
+  font-size: 18px;
+  font-weight: normal;
+  color: #F3F8FC;
+}
+
+#promo8 #tele .livicon{
+  height: 20px!important;
+}
+#promo8 .morph {
+  position: relative;
+}
+#promo8 .morph > div {
+  position: absolute;
+  width: 16px;
+  height: auto;
+  left:8px;
+  top: 5px;
+}
+
+.og-gridog-grid {
+	margin: 0 24px;
+}
