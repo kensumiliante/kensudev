@@ -102,7 +102,7 @@
                     <p class="livicon" data-n="gears" data-s="50" id="livicon-15" data-c="#bdc3c7" data-hc="#2c3e50"></p>
                     <h3 class="select">Desarrollo web a la medida</h3>
                     <!-- <p>Making clean and beautiful site for the web</p> -->
-                    <p>Trabajamos con .Net, JavaScript, CSS, HTML y damos un plus a tu marca, producto o servicio que tu decides.</p>
+                    <p>Trabajamos con CSS, HTML,.Net, JavaScript y damos un plus a tu producto o servicio.</p>
             </article>
             <article class="col-lg-3 align-center">
                 <p class="livicon" data-n="help" data-s="50" data-d="1400" id="livicon-489" data-c="#bdc3c7" data-hc="#2c3e50"></p>
@@ -155,24 +155,48 @@
                 <a href="mailto:kensumiliante@gmail.com">Contactame aquí</a>
             </div>
         </section>
+        <!-- Messenger plugin de chat Code -->
+    <div id="fb-root"></div>
+
+    <!-- Your plugin de chat code -->
+    <div id="fb-customer-chat" class="fb-customerchat">
+    </div>
+
+    <script>
+      var chatbox = document.getElementById('fb-customer-chat');
+      chatbox.setAttribute("page_id", "189816917717247");
+      chatbox.setAttribute("attribution", "biz_inbox");
+
+      window.fbAsyncInit = function() {
+        FB.init({
+          xfbml            : true,
+          version          : 'v11.0'
+        });
+      };
+
+      (function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+        fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));
+    </script>
         <!-- FOOTER -->    
             <section class="quote-container section-content align-center">
                 <h3>Deseas decirme algo?</h3>
-                <p class="narrow-p">Puedes llamarme, un correo electrónico o contactarme por medio de una red social.</p>
-                <p>(+57) 3057501951<br/>
+                <p class="narrow-p">Puedes envirme un correo electrónico o contactarme por medio de una red social.</p>
+                <p><br/>
                     <a href="mailto:kensumiliante@gmail.com">kensumiliante@gmail.com</a>
                 </p>
             </section>
           <footer class="main-footer section-content align-center no-padding-bottom" id="contact-info">
              <ul class="social-icons inline">
                     <li>
-                            <a href="http://twitter.com/kensumiliante" class="livicon" data-n="twitter" data-op="0" data-hc="0" id="livicon-425" target="_blank"></a>
+                            <a href="http://twitter.com/k3n5u" class="livicon" data-n="twitter" data-op="0" data-hc="0" id="livicon-425" target="_blank"></a>
                         </li>
                         <li>
-                            <a href="https://www.facebook.com/k3n5u" class="livicon" data-n="facebook-alt" data-op="0" data-hc="0" id="livicon-426" target="_blank" ></a>
-                        </li>
-                        <li>
-                            <a href="https://www.google.com/+kensumiliante" class="livicon" data-n="google-plus-alt" data-hc="0" id="livicon-333" target="_blank"></a>
+                            <a href="https://www.facebook.com/kensudev" class="livicon" data-n="facebook-alt" data-op="0" data-hc="0" id="livicon-426" target="_blank" ></a>
                         </li>
                       </ul>
               </ul>
@@ -200,20 +224,7 @@
         $("#elastic_grid_demo").elastic_grid({
             'items' :
             [                
-                {
-                    'title'         : 'The illustrated first war world',
-                    'description'   : 'Responsible for making the Front-end adjust the website to different tablets and smartphones, editing the css and js from different areas, created a new navigation bar based on wordpress Skills: PHP, HTML5, CSS3, JavaScript + plugins , responsive web design, wordpress',
-                    'thumbnail'     : ['img/portfolio/illustrated/thumb/Illustrated.png',
-                                        'img/portfolio/illustrated/thumb/Illustrated1.png',
-                                        'img/portfolio/illustrated/thumb/Illustrated2.png'],
-                    
-                    'large'         : ['img/portfolio/illustrated/Illustrated.png',
-                                        'img/portfolio/illustrated/Illustrated1.png',
-                                        'img/portfolio/illustrated/Illustrated2.png'],
-                    'button_list'   :
-                    [
-                        { 'title':'Website', 'url' : 'http://www.illustratedfirstworldwar.com/' }
-                  
+                
                     ],
                     'tags'          : ['wordpress']
                 },
@@ -264,23 +275,7 @@
                         { 'title':'Website', 'url' : 'http://kensumiliante.github.io/' }
                   
                     ],
-                    'tags'          : ['Vuejs','Angularjs']
-                },
-
-                 {
-                    'title'         : 'flappy Pixel',
-                    'description'   : 'Responsible for making the using javascript vanilla with canvas',
-                    'thumbnail'     : ['img/portfolio/flappypixel/thumb/FlappyPixel.png',
-                                       'img/portfolio/flappypixel/thumb/FlappyPixel1.png',
-                                       'img/portfolio/flappypixel/thumb/FlappyPixel2.jpg'],
-                    'large'         : ['img/portfolio/flappypixel/FlappyPixel.png',
-                                        'img/portfolio/flappypixel/FlappyPixel1.png',
-                                        'img/portfolio/flappypixel/FlappyPixel2.png'],
-                    'button_list'   :
-                    [
-                        { 'title':'Site', 'url' : 'http://marcogomesweb.com/demo/flappypixel/' }
-                  
-                    ],
+                    
                     'tags'          : ['canvas']
                 },
 
@@ -299,24 +294,7 @@
                         { 'title':'Website', 'url' : 'http://pavingblock-jbjc.co.uk/' }
                   
                     ],
-                    'tags'          : ['Angularjs']
-                },
-
-                {
-                    'title'         : 'Yorklandstone',
-                    'description'   : 'Responsible for making the Front-end. Optimization web using SEO on page. Some of the skills involve in the project were PHP, html5, JavaScript, PSD',
-                    'thumbnail'     : ['img/portfolio/yorklandstone/thumb/Yorkstone_Steps_London.png',
-                                       'img/portfolio/yorklandstone/thumb/London_Stone_Steps1.png',
-                                       'img/portfolio/yorklandstone/thumb/London_Stone_Steps.png'],
-
-                    'large'         : ['img/portfolio/yorklandstone/Yorkstone_Steps_London.png',
-                                       'img/portfolio/yorklandstone/Yorkstone_Steps_London1.png',
-                                       'img/portfolio/yorklandstone/Yorkstone_Steps_London2.png'],
-                    'button_list'   :
-                    [
-                        { 'title':'Yorklandstone', 'url' : 'http://yorklandstone-ltd.co.uk' }
-                       
-                    ],
+                   
                     'tags'          : ['SEO']
                 },
                  {
@@ -337,27 +315,8 @@
                     'tags'          : ['Zend Framework']
                 },
 
-              
-                 {
-                    'title'         : 'Se vende negocio',
-                    'description'   : 'Web Response desarrollada como un Content management system (CMS) usando Laravel Framework MVC consumiendo archivos de PHP cliente hospeda en Apache, Aprendiendo sobre: PHP , HTML5, CSS3, JavaScript + plugins , responsive web design, laravel, SEO, MySQL, Bootstrap ',
-
-                    'thumbnail'     : ['img/portfolio/sevendenegocio/thumb/sevende1.png',
-                                       'img/portfolio/sevendenegocio/thumb/sevende2.png',
-                                       'img/portfolio/sevendenegocio/thumb/sevende.png'],
-
-                    'large'         : ['img/portfolio/sevendenegocio/sevende1.png',
-                                       'img/portfolio/sevendenegocio/sevende2.png',
-                                       'img/portfolio/sevendenegocio/sevende.png'],
-                    'button_list'   :
-                    [
-                        { 'title':'Website', 'Sevendenegocio' : 'http://sevendenegocio.net' }
-                       
-                    ],
-                    'tags'          : ['laravel',  'SEO']
-                }
-
-            ]
+             
+                     ]
         });
     });
 </script>
