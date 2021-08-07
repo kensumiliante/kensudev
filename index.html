@@ -155,6 +155,33 @@
                 <a href="mailto:kensumiliante@gmail.com">Contactame aquí</a>
             </div>
         </section>
+        <!-- Messenger plugin de chat Code -->
+    <div id="fb-root"></div>
+
+    <!-- Your plugin de chat code -->
+    <div id="fb-customer-chat" class="fb-customerchat">
+    </div>
+
+    <script>
+      var chatbox = document.getElementById('fb-customer-chat');
+      chatbox.setAttribute("page_id", "189816917717247");
+      chatbox.setAttribute("attribution", "biz_inbox");
+
+      window.fbAsyncInit = function() {
+        FB.init({
+          xfbml            : true,
+          version          : 'v11.0'
+        });
+      };
+
+      (function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+        fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));
+    </script>
         <!-- FOOTER -->    
             <section class="quote-container section-content align-center">
                 <h3>Deseas decirme algo?</h3>
@@ -166,7 +193,7 @@
           <footer class="main-footer section-content align-center no-padding-bottom" id="contact-info">
              <ul class="social-icons inline">
                     <li>
-                            <a href="http://twitter.com/kensumiliante" class="livicon" data-n="twitter" data-op="0" data-hc="0" id="livicon-425" target="_blank"></a>
+                            <a href="http://twitter.com/k3n5u" class="livicon" data-n="twitter" data-op="0" data-hc="0" id="livicon-425" target="_blank"></a>
                         </li>
                         <li>
                             <a href="https://www.facebook.com/kensudev" class="livicon" data-n="facebook-alt" data-op="0" data-hc="0" id="livicon-426" target="_blank" ></a>
