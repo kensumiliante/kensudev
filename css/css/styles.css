@@ -4,7 +4,6 @@
 	Project Descriptcion : A Wordpress theme made exclusively for Tuts+ Premium
 	File Name: style.css
 	Author: Adi Purdila
-	Author URI: http:marcogomesweb.com
 	Version: 1.0.0
 
 ******************************************************************/
@@ -710,6 +709,12 @@ hr {
   .col-sm-offset-0 {
     margin-left: 0%;
   }
+}
+@media (max-width: 700px) {
+    .container {
+        width: 100%;
+        margin: 0 auto;
+    }
 }
 @media (min-width: 992px) {
   .col-md-1,
