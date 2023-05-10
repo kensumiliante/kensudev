@@ -1,110 +1,68 @@
 <!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Page</title>
-    <link rel="stylesheet" href="page.css">
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-</head>
-<body>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title></title>
+        <meta name="description" content="I’m a Web Developer">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <meta name="author" content="Miliante, Kensu">
+        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+        <link rel="stylesheet" href="css/styles.css">
+        <link href='http://fonts.googleapis.com,/css?family=Source+Sans+Pro:300,600,300italic,600italic|family=Bitter' rel='stylesheet'>
+        <link rel="stylesheet" type="text/css" href="css/elastic_grid.css" />
+        <script src="js/modernizr.custom.js"></script>
+    </head>
+    <body>
     
-<!--------CABECERA SOCIALES--------->
+        <!--[if lt IE 7]>
+            <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com,/">upgrade your browser</a> or <a href="http://www.google.com,/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+        <![endif]-->
 
-    <header >
-        <div class="sociales" >
-      <div    > 
-<a href="#">Tour</a>
-<a href="#video">Video</a>
-<a href="#subscribe">
-  Subscribe</a>
-</div>
-<div> 
-<a href=""> <img   class="julio" src="img/logo.png" alt="logo"> </a>
-</div>
-<div> 
-<div class="sociales">
-<a href="https://www.instagram.com/kensudev"><i class='bx bxl-instagram'></i></a>
-<a href="https://www.youtube.com/@kensudev"><i class='bx bxl-youtube'></i></a>
-<!--<a href="https://twitter.com/"><i class='bx bxl-twitter'></i></a> -->
-<!-- <a href="https://www.tiktok.com/@"><i class='bx bxl-tiktok'></i> </a> -->
-</div>
-</div>
-    </header>
-
-
-    <!-------ESTRUCTURA CUERPO------>
-
-<main>
-
-    <img class="logo" src="img/logo.png" alt="logotipo">
-
-</main>
-
-<!-------INTEGRANTES------>
-
-<section>
-<div class="Portafolio"> 
-   <div>
-<img  clase="Page" src="logo.png" alt="logo-yellow">
-</div>
-<div> 
-<img src="Page.png" alt=".png" srcset="">
-</div>
-<div> 
-<img src="logo.png" alt="logo-nav">
-</div>
-<div>  
-<img src="logo.png" alt="logo">
-</div>
-</div>
-</section>
-
-
-<!------- Section Musica------->
-
- <div class="musica" id="musica">
-<div class="bobo" >
-<img class="mu"  src="live2.png" alt="logo-listem">
-</div>
-<div class="bebe"  >  
-<img  class="list" src="Screenshot_13 copy.png" alt="logo-listen">
-</div>
-
-
-</div>
-
-<!-----Section Video------>
-
-<div class="video2"  id="video">  
-
-<video  class="poster" controls   width="900px"  height="700px" poster="pp.png" loop >
-
-<source src="loveluna.mp4"  type="video/mp4"   > 
-</video>
-
-
-</div>
-<div class="imgenes">
-    <h2 class="tipado"  > 123</h2>
-    </div>
-
-
-    <!-----------TOUR------>
-
-    <div class="tour"  id="tour" >
-
-      
-      <!----  <video class="bolero-gifv bolero-gifv-processed playing" playsinline="" autoplay="autoplay" loop="" muted="" width="1920" height="1080" style="max-width: 100%;">
-          <source src="https://progressive-cdn.ustudio.com/ustudio/app/transcodes/TJqFJJ4d4wZ4.mp4" type="video/mp4"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
-          Su navegador no soporta el elemento de vídeo.
-        </font></font></video>
-        ------>
-
-
-    </div>
-
+        <!-- HEADER -->
+        <header class="middle-container main-header align-center section-content no-padding-bottom no-padding-top" role="banner" id="#section-1">
+        <!-- end navtop -->
+            <div style="height: 885px;" class="container banner" id="section-1">
+                <p><a href="index.html" class="logo col-lg-12 ">
+                    <img src="img/logo.png" alt="Kensu Miliante Art" class="animated bounceInDown"></a></p>      
+                <h1 class="animated bounceIn"> I’m a Web Developer</h1>
+            </div> 
+            <nav class="navbar main-nav sticker" role="navigation" >
+              <div class="container">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                  </button>
+                  <a class="navbar-brand" href="#"><img src="img/logo-nav.png" alt=""></a>
+                </div>
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                  <ul class="nav navbar-nav" id="nav">
+                      <li><a href="#section-1">Home</a></li>
+                      <li><a href="#section-2">Servicios</a></li>
+                      <li><a href="#section-3">Portfolio</a></li>
+                      <li><a href="#section-4">Sobre</a></li>
+                      <li><a href="#section-5">Contacto</a></li>
+                  </ul>
+                </div><!-- /.navbar-collapse -->
+              </div><!-- /.container-fluid -->
+            </nav>
+        </header> 
+        <section>
+        <div class="container" id="section-2">
+          <div class="row">
+             <!-- <i class="livicon" data-n="gear" data-s="20" data-c="#bdc3c7" data-hc="#bdc3c7" ></i>  -->
+              <div class="titles-heading-light section-content" >
+                    <div class="line"></div>
+                    <h1>Servicios</h1>
+                </div>
 
 
     <!----------------LOGIN------------>
