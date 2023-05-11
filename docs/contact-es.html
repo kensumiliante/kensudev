@@ -25,7 +25,35 @@
 
     <link href="./main.3f6952e4.css" rel="stylesheet" />
   </head>
+   <!-- Messenger plugin de chat Code -->
+    <div id="fb-root"></div>
 
+    <!-- Your plugin de chat code -->
+    <div id="fb-customer-chat" class="fb-customerchat">
+    </div>
+<section>
+    <script>
+      var chatbox = document.getElementById('fb-customer-chat');
+      chatbox.setAttribute("page_id", "189816917717247");
+      chatbox.setAttribute("attribution", "biz_inbox");
+
+      window.fbAsyncInit = function() {
+        FB.init({
+          xfbml            : true,
+          version          : 'v11.0'
+        });
+      };
+
+      (function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+        fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));
+    </script>
+	
+	</section>
   <body class="">
     <div id="site-border-left"></div>
     <div id="site-border-right"></div>
@@ -212,18 +240,13 @@
                   </div>
                 </form>
               </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
+        
     <footer class="footer-container text-center">
       <div class="container">
         <div class="row">
           <div class="col-xs-12">
             <p>
-              Kensu
+              Kensu 2023
               <a href="https://github.com/kensumiliante" target="_blank"
                 >Visita mi perfil de GitHup</a
               >
