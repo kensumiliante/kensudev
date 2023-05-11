@@ -25,7 +25,35 @@
 
     <link href="./main.3f6952e4.css" rel="stylesheet" />
   </head>
+ <!-- Messenger plugin de chat Code -->
+    <div id="fb-root"></div>
 
+    <!-- Your plugin de chat code -->
+    <div id="fb-customer-chat" class="fb-customerchat">
+    </div>
+<section>
+    <script>
+      var chatbox = document.getElementById('fb-customer-chat');
+      chatbox.setAttribute("page_id", "189816917717247");
+      chatbox.setAttribute("attribution", "biz_inbox");
+
+      window.fbAsyncInit = function() {
+        FB.init({
+          xfbml            : true,
+          version          : 'v11.0'
+        });
+      };
+
+      (function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+        fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));
+    </script>
+	
+	</section
   <body class="">
     <div id="site-border-left"></div>
     <div id="site-border-right"></div>
@@ -81,8 +109,9 @@
                       ¡Hola! Soy una desarrolladora web entusiasta y apasionada de la
                       tecnología. Me encanta crear cosas nuevas y desafiarme para 
                       aprender más cada día. Soy Ingeniera de sistemas de Software,
-                      pero también completé varios cursos de Calidad en el "Sistema Educativo público,
-                      Centros de Formación para el Trabajo", y ms botcaamp el cual me otorgó certificados:
+                      pero también completé varios cursos de Calidad en el "Sistema
+                      Educativo público y Centros de Formación para el Trabajo",
+                      ms botcaamp el cual me otorgó acreditación:
                     </p>
                       <ul>
                            <li>
@@ -92,7 +121,6 @@
                           >Curriculum Vitae</a
                         >Descarga resumen curricular
                       </li>
-                      <li>
                       <li>
                         <a
                           href="https://drive.google.com/file/d/1geOKQ8YXEQ2A79GPy2AldWJVAMdnWdRg/view"
@@ -117,7 +145,7 @@
                         <a
                           href="https://drive.google.com/file/d/1EbpzHM59sL_3AOAgfcRSEHqnAQ3y1oRI/view"
                           target="_blank"
-                          >Desde el primer empleo con más de 9 años de experiencia con excelencia</a
+                          >Desde el primer empleo con más de 9 años de experiencia </a
                         >
                       </li>
                         >
@@ -128,19 +156,19 @@
                       de desarrollo web.
                     </p>
                     <p>
-                      Mi especialidad es la calidad en el desarrollo de aplicaciones web
-                      utilizando tecnologías como HTML, CSS, JavaScript, Php,
-                      y frameworks como Javascript. También tengo
-                      experiencia utilizando bases de datos Azure sql database y MySQL para pequeños
+                      Mi especialidad es la calidad en el desarrollo de aplicaciones 
+                      web utilizando tecnologías como HTML, CSS, JavaScript, Php,
+                      y frameworks como Javascript. También tengo experiencia 
+                      utilizando bases de datos Azure sql database y MySQL para pequeños
                       proyectos personales, utilizando Python como mi lenguaje
                       de desarrollo preferido.
                     </p>
                     <h3>En mi tiempo libre...</h3>
                     <p>
-                      Además de mi trabajo como desarrolladora web y calidad de software, realmente
-                      disfruto de la pintura, la música y jugar videojuegos. Me gusta viajar 
-                      y experimentar nuevas culturas, creo que la diversidad es un valor
-                      fundamental para la sociedad.
+                      Además de mi trabajo como desarrolladora web y calidad de software, 
+                      realmente disfruto de la pintura, la música y jugar videojuegos. 
+                      Me gusta viajar y experimentar nuevas culturas, creo que la 
+                      diversidad es un valor fundamental para la sociedad.
                     </p>
 
                     <p>
