@@ -135,7 +135,7 @@
 
             <div class="row">
               <div class="col-md-10 col-md-offset-1">
-                <!-- https://formspree.io/f/xjvdjlya -->
+                <!-- https://formspree.io/f/xjvdjlya 
                 <form
                   action="https://formsubmit.co/kensumiliante@gmail.com"
                   method="POST"
@@ -172,7 +172,44 @@
                       </div>
                       <button type="submit" class="btn btn-default btn-lg">
                         Inviare
-                      </button>
+                      </button> -->
+
+<!-- Read the Formbutton docs at formspree.io/formbutton/docs. See more examples at codepen.io/formspree -->
+<script src="https://formspree.io/js/formbutton-v1.min.js" defer></script>
+<script>
+  /* paste this line in verbatim */
+  window.formbutton=window.formbutton||function(){(formbutton.q=formbutton.q||[]).push(arguments)};
+  /* customize formbutton below*/     
+  formbutton("create", {
+    action: "https://formspree.io/f/xvoeklkk",
+    title: "	Contactarme?",
+    fields: [
+      { 
+        type: "email", 
+        label: "Email:", 
+        name: "email",
+        required: true,
+        placeholder: "your@email.com"
+      },
+      {
+        type: "textarea",
+        label: "Message:",
+        name: "message",
+        placeholder: "What's on your mind?",
+      },
+      { type: "submit" }      
+    ],
+    styles: {
+      title: {
+        backgroundColor: "gray"
+      },
+      button: {
+        backgroundColor: "gray"
+      }
+    }
+  });
+</script>
+			    
                     </div>
                     <div class="col-md-5 address-container">
                       <ul class="list-unstyled">
