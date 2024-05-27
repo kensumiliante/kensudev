@@ -35,7 +35,52 @@
    <!-- Messenger plugin de chat Code -->
     <div id="fb-root"></div>
 
-    <!-- Your plugin de chat code -->
+   <!-- Messenger plugin de chat Code -->
+
+<div id="fb-customer-chat" class="fb-customerchat">
+    </div>
+<section>
+    <script>
+      var chatbox = document.getElementById('fb-customer-chat');
+      chatbox.setAttribute("m.me/189816917717247");
+      chatbox.setAttribute("attribution", "biz_inbox");
+
+      window.fbAsyncInit = function() {
+        FB.init({
+          xfbml            : true,
+          version          : 'v11.0'
+        });
+      };
+
+      (function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+        fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));
+    </script>
+	
+	</section>
+    <header>
+      <nav class="navbar navbar-fixed-top navbar-inverse">
+        <div class="container">
+          <button
+            type="button"
+            class="navbar-toggle collapsed"
+            data-toggle="collapse"
+            data-target="#navbar-collapse"
+            aria-expanded="false"
+          >
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+   <!-- Messenger plugin de chat Code -->
+
+		
+    <!-- Your plugin de chat code old -->
     <div id="fb-customer-chat" class="fb-customerchat">
     </div>
 <section>
